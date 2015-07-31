@@ -40,15 +40,15 @@ Guide for Installation of Fuji Xerox Printer on Ubuntu 14.04 LTS
 
 <!-- Links -->
 
-[webpage01]: figures/webpage01.png "webpage"
-[webpage02]: figures/webpage02.png "webpage"
-[webpage03]: figures/webpage03.png "webpage"
-[webpage04]: figures/webpage04.png "webpage"
-[webpage05]: figures/webpage05.png "webpage"
-[webpage06]: figures/webpage06.png "webpage"
-[webpage07]: figures/webpage07.png "webpage"
-[webpage08]: figures/webpage08.png "webpage"
-[webpage09]: figures/webpage09.png "webpage"
-[screenshot01]: figures/screenshot01.png "screenshot"
+[webpage01]: figures/sutd-printer-linux/webpage01.png "webpage"
+[webpage02]: figures/sutd-printer-linux/webpage02.png "webpage"
+[webpage03]: figures/sutd-printer-linux/webpage03.png "webpage"
+[webpage04]: figures/sutd-printer-linux/webpage04.png "webpage"
+[webpage05]: figures/sutd-printer-linux/webpage05.png "webpage"
+[webpage06]: figures/sutd-printer-linux/webpage06.png "webpage"
+[webpage07]: figures/sutd-printer-linux/webpage07.png "webpage"
+[webpage08]: figures/sutd-printer-linux/webpage08.png "webpage"
+[webpage09]: figures/sutd-printer-linux/webpage09.png "webpage"
+[screenshot01]: figures/sutd-printer-linux/screenshot01.png "screenshot"
 
 > By Sibo Song (sibo_song@mymail.sutd.edu.sg)
