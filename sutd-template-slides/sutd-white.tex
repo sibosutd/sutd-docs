@@ -1,0 +1,94 @@
+% Include this file for light background SUTD style
+% Version 1: Nils Ole Tippenhauer, SUTD, 2014
+% Version 2: Sibo Song, SUTD, 2016
+\mode<presentation>
+
+\usecolortheme{rose}
+\useinnertheme{rounded}
+\usecolortheme{dolphin}
+\useoutertheme{infolines}
+
+% more stuff from Boadilla sty
+\setbeamersize{text margin left=1.5em,text margin right=1.5em}
+% disables headline
+\setbeamertemplate{headline}[default]
+\mode<all>
+
+% resize footnote font size
+\setbeamerfont{footnote}{size=\tiny}
+
+% disable tool bar
+\beamertemplatenavigationsymbolsempty
+
+% logo. If your logo has different dimension, this might need tweaking
+\usepackage{pgf}  
+\logo{\pgfputat{\pgfxy(-1,8)}{\pgfbox[center,base]{\includegraphics[height=1.2cm]{figure/SUTDMainLogo.png}}}}
+
+% fonts
+\usepackage{helvet}
+\usepackage{times}
+\usefonttheme{serif}
+
+% title page, simple version
+\setbeamertemplate{title page}{
+{\usebeamerfont{title}\LARGE\bf\inserttitle\vspace{0.1cm}\hrule}
+\vspace{0.2cm}\usebeamerfont{author}\hfill\insertauthor
+}
+
+% color
+\definecolor{SUTDred}{RGB}{153,0,51}
+\definecolor{white}{RGB}{255,255,255}
+\definecolor{lgrey}{RGB}{204,204,204}
+\definecolor{mgrey}{RGB}{102,102,102}
+\definecolor{dgrey}{RGB}{51,51,51}
+
+% hline for the titles
+\setbeamertemplate{frametitle}{
+\vspace{0.2cm}
+{\usebeamerfont{title}\bf\insertframetitle\par\vskip-6pt\line(1,0){275}}}
+
+% set text color 
+\setbeamercolor{normal text}{fg=black,bg=white}
+\setbeamercolor{section number projected}{fg=black}
+\setbeamercolor{section in toc}{fg=black}
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{frametitle}{fg=black}
+\setbeamercolor{framesubtitle}{fg=black}
+\setbeamercolor{caption}{fg=black}
+
+% highlight color using \alert{} command
+\setbeamercolor{alerted text}{fg=SUTDred}
+
+% set items styles to be default
+% \setbeamertemplate{itemize items}[default]
+% \setbeamertemplate{enumerate items}[default]
+
+% item color setting
+\setbeamercolor{item}{fg=black,bg=lgrey}
+\setbeamercolor{item projected}{use=item,fg=black,bg=item.fg!35}
+\setbeamercolor{subitem}{fg=black,bg=mgrey}
+\setbeamercolor{subitem projected}{use=item,fg=black,bg=item.fg!35}
+
+% itemize item style setting
+\useitemizeitemtemplate{\Large\hbox{\textbullet}}
+\usesubitemizeitemtemplate{\tiny\hbox{$\blacktriangleright$}}
+\usesubsubitemizeitemtemplate{\tiny\hbox{$\star$}}
+
+% enumerate item style setting
+\setbeamertemplate{enumerate item}{\insertenumlabel.}
+\setbeamertemplate{enumerate subitem}{\alph{enumii}.}
+\setbeamertemplate{enumerate subsubitem}{(\alph{enumiii}).}
+\setbeamertemplate{enumerate mini template}{\insertenumlabel}
+
+% palette color setting
+\setbeamercolor{palette primary}{fg=white,bg=SUTDred}
+\setbeamercolor{palette secondary}{fg=white,bg=mgrey}
+\setbeamercolor{palette tertiary}{fg=black,bg=lgrey}
+\setbeamercolor{palette quaternary}{fg=white,bg=lgrey} 
+
+% block color setting
+\setbeamercolor{block title}{fg=black,bg=black!15}
+\setbeamercolor{block body}{fg=black,bg=black!5}
+\setbeamercolor{block title alerted}{parent=alerted text,bg=black!15}
+\setbeamercolor{block title example}{parent=example text,bg=black!15}
+

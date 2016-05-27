@@ -1,0 +1,135 @@
+\pdfminorversion=4
+\documentclass[presentation, aspectratio=54]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{textgreek}
+\usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
+\addbibresource{ref.bib}
+\tolerance=1000
+\input{sutd-white}
+\usetheme{default}
+\author{Author name}
+\date{April 29, 2016}
+\title[short title]{Slides template \LaTeX - SUTD theme}
+\begin{document}
+
+\maketitle
+%-----------------------------------------------------
+
+\begin{frame}{List}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{enumerate}
+\item \alert{enumerate}
+  \begin{enumerate}
+  \item sub item a
+    \begin{enumerate}
+    \item sub sub item alpha
+    \item sub sub item beta
+    \item sub sub item gamma
+    \end{enumerate}
+  \item sub item b
+  \item sub item c
+  \end{enumerate}
+\end{enumerate}
+\end{column}
+
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item \alert{itemize}
+  \begin{itemize}
+  \item sub item
+    \begin{itemize}
+    \item sub sub item
+    \item sub sub item
+    \item sub sub item
+    \end{itemize}
+  \item sub item
+  \item sub item
+  \end{itemize}
+\end{itemize}
+
+\end{column}
+\end{columns}
+
+\end{frame}
+%-----------------------------------------------------
+
+\begin{frame}{Blocks}
+\begin{block}{Block 1}
+This is a normal block.
+\end{block}
+\begin{exampleblock}{Block 2}
+This is an example block.
+\end{exampleblock}
+\begin{alertblock}{Block 3}
+This is an alert block.
+\end{alertblock}
+\end{frame}
+%-----------------------------------------------------
+
+\begin{frame}{Figure and Reference}
+
+\begin{center}
+\begin{figure}
+\includegraphics[width=0.9\linewidth]{figure/LSTM3-chain.png}
+\caption{LSTM Diagram \footfullcite{understandLSTM}}
+\label{fig:campus}
+\end{figure}
+\end{center}
+
+\end{frame}
+%-----------------------------------------------------
+
+\begin{frame}{Equation and Table}
+
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{align*}
+i &=\sigma(x_tU^i + h_{t-1} W^i) \\
+f &=\sigma(x_t U^f +h_{t-1} W^f) \\  
+o &=\sigma(x_t U^o + h_{t-1} W^o) \\  
+g &=\tanh(x_t U^g + h_{t-1}W^g) \\  
+c_t &= c_{t-1} \circ f + g \circ i \\  
+h_t &=\tanh(c_t) \circ o  
+\end{align*}  
+\end{column}
+
+\begin{column}{0.5\textwidth}
+% Table
+\begin{table}[]
+\centering
+\caption{Sample Table}
+\label{tab:sample}
+\scalebox{0.8}{
+\begin{tabular}{c|c|c}
+Year         & stats 1      & stats 2      \\ \hline \hline
+2013         & 41.5\%       & 46.0\%       \\ \hline
+2014         & 38.0\%       & 48.0\%       \\ \hline
+2015         & 40.0\%       & 53.5\%       \\  
+\end{tabular}}
+\end{table}
+\end{column}
+\end{columns}
+
+\end{frame}
+%-----------------------------------------------------
+
+\begin{frame}
+\begin{center}
+\Huge Thank You!
+\end{center}
+\end{frame}
+%-----------------------------------------------------
+
+\end{document}
