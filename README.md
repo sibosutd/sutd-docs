@@ -10,6 +10,7 @@
 ### SUTD theme slides LaTeX template
 + Download `sutd-template-slides` folder.
 + Preview:
+
 ![thumbnails][thumbnails]
 
 <!-- Links -->
