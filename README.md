@@ -7,8 +7,10 @@
 ### Guide for setting up Fuji Xerox Printer
 + [Linux](sutd-printer-linux.md)
 
-### Slides LaTeX template of SUTD theme
-+ ![thumbnails][thumbnails]
+### SUTD theme slides LaTeX template
++ Download `sutd-template-slides` folder.
++ Preview:
+![thumbnails][thumbnails]
 
 <!-- Links -->
 
